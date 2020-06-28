@@ -7,7 +7,6 @@ export const updateUserStatus = (id, status) => {
   const obj = JSON.parse(fs.readFileSync(userPath));
   const user = {...obj[id], online: status};
   obj[id] = user;
-  console.log('updateUserStatus', obj);
 
   fs.writeFileSync(userPath, JSON.stringify(obj), 'utf8', statusUpdated());
 };

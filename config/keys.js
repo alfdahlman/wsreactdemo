@@ -1,5 +1,1 @@
-if(process.env.NODE_ENV === 'production'){
-  export * from './prod';
-}else{
-  export * from './dev';
-}
+export const JWT_SECRET = "oi544ot999gkgk9k95gkktg";

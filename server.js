@@ -37,7 +37,6 @@ io.on('connection', socket => {
   });
 
   socket.on('chat', data => {
-    console.log('chat');
     io.sockets.in(data.recipient).emit('new_msg', { msg: data.msg, user: data.user, recipient: data.recipient });
   });
 
