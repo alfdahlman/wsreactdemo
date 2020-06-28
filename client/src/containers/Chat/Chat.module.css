@@ -1,0 +1,45 @@
+.Chat{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 120px 0;
+  position: relative;
+}
+
+
+.UserList{
+  width: 100%;
+  overflow: scroll;
+}
+
+.UserList ul{
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  list-style: none;
+}
+
+.UserList li {
+  padding: 10px;
+  font-size: 25px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.UserList li span{
+  font-size: 14px;
+  background-color: red;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.Main{
+  width: 100%;
+  overflow: scroll;
+}

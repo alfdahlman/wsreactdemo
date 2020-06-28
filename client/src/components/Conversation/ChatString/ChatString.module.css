@@ -1,0 +1,28 @@
+.String{
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+
+.String p{
+  border-radius: 15px;
+  display: inline-block;
+  font-size: 16px;
+  padding: 3px 15px;
+  margin: 5px auto;
+}
+
+.Left{
+  text-align: left;
+}
+
+.Left p{
+  background-color: #CCC;
+}
+
+.Right{
+  text-align: right;
+}
+
+.Right p{
+  background-color: #84AF84;
+}

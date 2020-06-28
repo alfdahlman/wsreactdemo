@@ -1,0 +1,26 @@
+.Submit{
+  background-color: #84AF84;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  bottom: 0;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.Submit input{
+  box-sizing: border-box;
+  height: 30px;
+  width: 75%;
+}
+
+.Submit button{
+  color: white;
+  box-sizing: border-box;
+  height: 30px;
+  width: 25%;
+  background-color: unset;
+  border: 1px solid white;
+}

@@ -1,0 +1,26 @@
+.Auth {
+  display: flex;
+  height: 100vh;
+  box-sizing: border-box;
+  justify-content: center;
+  padding-top: 200px;
+}
+
+.FormArea{
+  text-align: center;
+  width: 80%;
+}
+
+.Submit{
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 30px;
+  background-color: #84AF84;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  apperance: none;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
