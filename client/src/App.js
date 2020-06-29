@@ -15,7 +15,7 @@ class App extends Component {
 
   UNSAFE_componentWillMount(){
     const socket = process.env.NODE_ENV === 'development'
-    ? socketIOClient('http://127.0.0.1:4001')
+    ? socketIOClient('http://192.168.0.35:4001')
     : socketIOClient('/');
 
     this.props.onSetSocket(socket);

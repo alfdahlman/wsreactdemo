@@ -72,7 +72,9 @@ class Auth extends Component {
       data['name'] = this.state.authForm.name.value
       axios.post('/register', data)
         .then(response => {
-          this.setState({ isLogin: true })
+          const nextForm = {...this.state.authForm};
+          delete nextForm.name;
+          this.setState({ isLogin: true, authForm: nextForm })
         })
         .catch(error => {
           console.dir(error)

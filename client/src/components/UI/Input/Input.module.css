@@ -14,13 +14,14 @@
 }
 
 .LabelInvalid{
-  color: red;
+  color: #DB0F00;
 }
 
 .InputElement{
   outline: none;
   border: none;
   border-bottom: 1px solid black;
+  border-radius: 0;
   background-color: white;
   font-family: inherit;
   padding: 6px 10px;
@@ -35,5 +36,5 @@
 }
 
 .Invalid{
-  border-color: red;
+  border-color: #DB0F00;
 }

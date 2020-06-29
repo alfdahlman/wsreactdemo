@@ -16,7 +16,7 @@
 }
 
 .Left p{
-  background-color: #CCC;
+  background-color: rgba(0, 0, 0, .1);
 }
 
 .Right{
@@ -24,5 +24,5 @@
 }
 
 .Right p{
-  background-color: #84AF84;
+  background-color: rgba(62, 118, 229, .1);
 }
