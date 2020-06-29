@@ -9,11 +9,16 @@ import './index.css';
 import App from './App';
 import reducer from './store/reducer';
 
+/*
 const composeEnhancers = process.env.NODE_ENV === 'development'
 ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 : null;
+*/
+console.log('[reducer]', reducer);
 
-const store = createStore(reducer,composeEnhancers(applyMiddleware(thunk)));
+//const store = createStore(reducer,composeEnhancers(applyMiddleware(thunk)));
+const store = createStore(reducer, applyMiddleware(thunk));
+console.log('[store]', store);
 
 const app = (
   <Provider store={store}>
