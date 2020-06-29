@@ -14,7 +14,6 @@ import Chat from './containers/Chat/Chat';
 class App extends Component {
 
   UNSAFE_componentWillMount(){
-    
     const socket = process.env.NODE_ENV === 'development'
     ? socketIOClient('http://127.0.0.1:4001')
     : socketIOClient('/');
