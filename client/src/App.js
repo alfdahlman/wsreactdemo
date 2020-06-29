@@ -14,7 +14,11 @@ import Chat from './containers/Chat/Chat';
 class App extends Component {
 
   UNSAFE_componentWillMount(){
-    const socket = socketIOClient('http://127.0.0.1:4001');
+    
+    const socket = process.env.NODE_ENV === 'development'
+    ? socketIOClient('http://127.0.0.1:4001')
+    : socketIOClient('/');
+
     this.props.onSetSocket(socket);
 
     const token = localStorage.getItem('token');
